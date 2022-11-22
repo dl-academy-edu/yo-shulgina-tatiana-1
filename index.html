@@ -4,7 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster design</title>
+    <title>Main</title>
+    /*Стили для звездного рейтинга*/
+    <style>
+        /*Rating*/
+        .rating{
+            margin: 0 0 1em 0;
+            padding: 0;
+            border: none;
+        }
+        .rating_caption{
+            margin-bottom: 0.5em;
+            padding: 0;
+        }
+        .rating_group{
+            position: relative;
+            width: 10em;
+            height: 2em;
+            background-image: url();
+        }
+        .rating_star{
+            position: absolute;
+            top: 0;
+            left: 0;            
+            height: 2em;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        /*Options*/
+        .rating_star:nth-of-type(1){
+            z-index: 5;
+            width: 2em;
+        }
+        .rating_star:nth-of-type(2){
+            z-index: 4;
+            width: 4em;
+        }
+        .rating_star:nth-of-type(3){
+            z-index: 3;
+            width: 6em;
+        }
+        .rating_star:nth-of-type(4){
+            z-index: 2;
+            width: 8em;
+        }
+        .rating_star:nth-of-type(5){
+            z-index: 1;
+            width: 10em;
+        }     
+    </style>
 </head>
 <body>
     <header>
@@ -23,7 +72,7 @@
             </ul> 
             <ul>
                 <li>
-                    <a href="#"><img src="" alt="">Search</a>
+                    <a href="#"><img src="" alt="Search"></a>
                 </li>
                 <li>
                     <a href="#">CONTACT US</a>
@@ -60,11 +109,11 @@
                 </li>
 
                 <li>
-                    <a href="#">ACCESSORIES</a><img src="" alt="Скетборд">
+                    <a href="#">ACCESSORIES</a><img src="" alt="Скейтборд">
                 </li>
             </ul> 
-            <button type="button"><img src="" alt="Скролл1"></button>
-            <button type="button"><img src="" alt="Скролл2"></button>
+            <button type="button"><img src="" alt="Влево"></button>
+            <button type="button"><img src="" alt="Вправо"></button>
             <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>         
         </section>
         <section>
@@ -98,7 +147,7 @@
         <h2>Design Life Kids</h2>
         <p>About Us</p>
         <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  </p>
-        <a href="#">BAY NOW</a>
+        <a href="#">BUY NOW</a>
     </section>
     <section>
         <h2>Contacts</h2>
@@ -145,6 +194,16 @@
             <li><img src="" alt="Звезда рейтинга 3"></li>
             <li><img src="" alt="Звезда рейтинга 4"></li>
             <li><img src="" alt="Звезда рейтинга 5"></li>
+        <!--<fieldset class="rating">
+            <legend class="rating_caption">Company Rating</legend>
+         <div class="rating_group">
+            <input class="rating_star" type="radio" name="rating" value="1" aria-label="1" checked> 
+            <input class="rating_star" type="radio" name="rating" value="2" aria-label="2">
+            <input class="rating_star" type="radio" name="rating" value="3" aria-label="3">
+            <input class="rating_star" type="radio" name="rating" value="4" aria-label="4">
+            <input class="rating_star" type="radio" name="rating" value="5" aria-label="5">
+        </div>
+        </fieldset> запуталась в стилях, пока так разметила-->
             <li>Copyright © 2018 Dlk • Design Life Kids</li>
             <li>Web Design — <a href="#">Direct Line Development</a></li>
         </ul>
