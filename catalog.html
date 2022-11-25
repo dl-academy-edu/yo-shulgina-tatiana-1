@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/index.html">DLK</a> 
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="/catalog.html">CATALOG</a><!--вопрос:если мы находимся на странице Каталог, здесь не должно быть ссылки, т.к. будет ссылыться сама на себя (циклическая), в каких тегах лучше прописать <p>?-->
+                </li>
+                <li>
+                    <a href="/about-us.html">ABOUT US</a>
+                </li>
+            </ul> 
+            <ul>
+                <li>
+                    <a href="#"><img src="./img/icon/search.svg" alt="Search" width="17" height="18"></a>
+                </li>
+                <li>
+                    <a href="/contact.html">CONTACT US</a>
+                </li>
+            </ul> 
+        </nav>
+    </header> 
+    <section>
+        <h1>Category Products</h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <img src="./img/icon/right.svg" alt="Right" width="8" height="12">
+                </li>
+                <li><p>Catalog</p> <!--без ссылки, т.к. должно быть некликабельным-->
+                </li>
+            </ul>
+        </div>
+
+    </section>
+</body>
+</html>
