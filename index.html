@@ -56,9 +56,7 @@
 </head>
 <body>
     <header>
-    <div>
-        <a href="/index.html">DLK<!--img src="./img/icon/logo.svg" alt="Logo" width="100" height="52"--></a> 
-    </div>
+        <a href="/index.html"><img src="./img/icon/logo.png" alt="Logo" width="100" height="52"></a> 
         <nav>
             <ul>
                 <li>
@@ -85,10 +83,10 @@
         <section>
         <div>
             <p>01</p>
-            <a href="#"></a><img src="./img/icon/button.svg" alt="Button 1" width="31" height="3">
-            <a href="#"></a><img src="./img/icon/button.svg" alt="Button 2" width="31" height="3">
-            <a href="#"></a><img src="./img/icon/button.svg" alt="Button 3" width="31" height="3">
-            <a href="#"></a><img src="./img/icon/button.svg" alt="Button 4" width="31" height="3">
+            <button type="button">Button 1</button>
+            <button type="button">Button 2</button>
+            <button type="button">Button 3</button>
+            <button type="button">Button 4</button>
         </div>
             <h1>THE OOH NOO COLLECTION</h1>
             <p>Designed in Slovenia</p>
@@ -115,8 +113,8 @@
                     <a href="#">ACCESSORIES</a><img src="./img/skateboard.png" alt="Skateboard" width="240" height="250">
                 </li>
             </ul> 
-            <a href="#"></a><img src="./img/icon/left.svg" alt="Left" width="13" height="26">
-            <a href="#"></a><img src="./img/icon/right.svg" alt="Right" width="13" height="26">
+            <button type="button">Left</button>
+            <button type="button">Right</button>
             <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>         
         </section>
         <section>
@@ -221,3 +219,32 @@
     </footer>
 </body>
 </html>
+<form method="post" action="#">
+    <div>
+        <label for="Name">Name</label>
+        <input type="text">       
+    </div>
+    <div>
+        <div>
+            <label for="Phone">Phone</label>
+            <input type="text">       
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="text">       
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <label for="Message">Message</label>
+                <textarea name="Message" id="" cols="30" rows="10"></textarea>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label for="">By clicking on the button, you consent to the processing of your personal data</label>
+            </li>
+        </ul>   
+    </div> 
+    <button type="submit">SUBMIT</button> 
+</form>
