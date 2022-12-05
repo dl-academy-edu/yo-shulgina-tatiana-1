@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*сжимается внутренний контент под общий размер*/
+}
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal; /*жирный, наклонный или др*/
+    font-size: 14px;
+    line-height: 19px; /*межстрочный интервал*/
+    color: #1E0606;
+}
+
+a {
+    list-style: none; /*убирает маркер списка точку?*/
+    text-decoration: none; /*убирает подчеркивание*/
+}
+
+img {
+    display: block; /* блочные элементы, можем задать высоту и ширину*/
+    max-width: 100%;
+}
+
+.container { /*проставить во всех секциях, дивах, отодвигает от края*/
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none; /*прописать во всех списках li, убирает точку в списках*/
+}
+
+/* стилизация header */
+
+.header {
+    display: flex; /*задает блок*/
+    margin-top: 50px; /*отступ сверху*/
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 60px; /*отступ от лого вправо до меню*/
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-right: 20px;
+}
+
+.left {
+    margin-right: auto; /*толкает второй список во флексе к правому полю*/
+}
+
+.search {
+    margin-right: 24px;
+}
+
+.link__info {
+    padding: 9px 22px 9px 22px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    width: 123px;
+    height: 40px;
+    left: 140px;
+    top: 2230px;
+    background: #000000;
+}
+
+.btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 22px;
+    background: #000;
+   /* width: 161px;
+    height: 40px;
+    left: 243px;
+    top: 474px;*/
+}
