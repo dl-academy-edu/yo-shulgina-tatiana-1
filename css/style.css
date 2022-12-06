@@ -1,0 +1,75 @@
+.banner {
+    margin-top: 128px;
+    margin-bottom: 90px;
+    background-image: url(../img/monster.png); 
+    position: relative;
+    background: #EEE4DB;
+}
+
+.banner__inner {
+    padding-left: 132px;
+}
+
+.title {
+    padding-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+}
+
+.notion {
+    padding-bottom: 20px;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.img_banner {
+    position: absolute;
+}
+
+
+.utp {
+    background: #C29974;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.category__list {
+    display: flex;
+    
+}
+
+.p__one {
+    padding-top: 16px;
+    padding-left: 28px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 73px;
+    color: rgba(30, 6, 6, 0.05);
+}
+
+.btn__block{
+    padding-top: 10px;
+    padding-left: 32px;
+}
+
+.btn__line {
+    width: 31px;
+    height: 3px;
+    background: rgba(30, 6, 6, 0.6);
+}
