@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    list-style: none; /*убирает маркер списка точку?*/
+    /*list-style: none; /*убирает маркер списка точку?*/
     text-decoration: none; /*убирает подчеркивание*/
 }
 
@@ -36,6 +36,7 @@ li {
 .header {
     display: flex; /*задает блок*/
     margin-top: 50px; /*отступ сверху*/
+    margin-bottom: 128px;
     align-items: center;
 }
 
