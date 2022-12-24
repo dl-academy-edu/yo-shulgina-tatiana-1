@@ -68,7 +68,7 @@ li {
 }
 
 .search {
-    margin-right: 24px;
+    margin-right: 10px;
 }
 
 .link__info {
@@ -79,11 +79,15 @@ li {
     font-size: 16px;
     line-height: 22px;
     color: #fff;
-    width: 123px;
+    width: 150px;
     height: 40px;
     left: 140px;
     top: 2230px;
     background: #000000;
+}
+
+.place__link {
+    margin-top: 32px;
 }
 
 .btn {

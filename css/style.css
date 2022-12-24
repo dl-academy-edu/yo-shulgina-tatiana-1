@@ -9,7 +9,7 @@
 }
 
 .banner__inner {
-    padding-top: 88px;
+    padding-top: 92px;
     /* padding-left: 132px; */
     padding-right: 740px;
     padding-bottom: 90px;
@@ -55,7 +55,7 @@
 .img_banner {
     position: absolute;
     left: 445px;
-    top: -47px;
+    top: -87px;
 }
 
 .utp {
@@ -89,9 +89,14 @@
 }
 
 .btn__block {
-    padding-top: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 30px;
+    grid-gap: 1px;
+    /* padding-top: 2px;
     padding-left: 32px;
-    padding-right: 72px;
+    padding-right: 72px; */
 }
 
 .btn__line {
@@ -126,24 +131,24 @@
 }
 
 .product__one {
-    max-width: 280px;
+    width: 280px;
     height: 270px;
     background-color: #DBE4DB;
 }
 
 .product__two {
-    max-width: 280px;
+    width: 280px;
     height: 270px;
     background-color: #EADDD3;
 }
 
 .product__three {
-    max-width: 270px;
+    width: 270px;
     height: 270px;
 }
 
 .product__four {
-    max-width: 280px;
+    width: 280px;
     height: 270px;
     background-color: #D5D4E1;
 }
@@ -159,6 +164,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    width: 192px;
 }
 
 .selector {
@@ -172,7 +178,7 @@
     border: none;
     background-image: url(../img/icon/left.svg);
     background-position: center;
-    width: 38px;
+    width: 60px;
     height: 38px;
 }
 
@@ -182,7 +188,7 @@
     border: none;
     background-image: url(../img/icon/right.svg);
     background-position: center;
-    width: 38px;
+    width: 60px;
     height: 38px;
 }
 
@@ -190,6 +196,12 @@
 .selector_text {
     padding-left: 20px;
     padding-right: 500px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
 }
 
 .delivery {
@@ -199,21 +211,25 @@
 }
 
 .delivery__list {
+    display: flex;
     flex-direction: column;
-    padding-left: 60px;
-    padding-top: 30px;
+    margin-left: 120px;
+    margin-top: 30px;
 }
 
 .delivery__menu {
     display: flex;
+    position: relative;
+    top: 16px;
     flex-direction: column;
+    grid-gap: 20px;
 }
 
 .menu__one {
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 34px;
     color: #1E0606;
 }
@@ -222,7 +238,7 @@
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 34px;
     color: #1E0606;
 }
@@ -234,45 +250,90 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+
 }
 
-.text__padding {
-    padding-top: 30px;
-    padding-right: 100px;
-    padding-bottom: 15px;
+.text_one {
+    margin-top: 48px;
+    width: 470px;    
 }
 
 .text__two {
-    padding-right: 100px;
-    padding-bottom: 26px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1E0606;
+    margin-top: 18px;
+    width: 468px;
 }
 
 .partner_logo {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 90px;
+    margin-top: 186px;
 }
 
 .common {
     display: flex;
+    position: relative;
+    gap: 57px;
+    top: 84px;
 }
 
-.decor {
-    background: #E1F0F7;
+.block__design {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 30px;
+    top: 24px;
+    width: 544px;
     height: 228px;
-    width: 542px;
+    background: #E1F0F7;
+}
+
+.header__position {
+    margin-top: -24px;
 }
 
 .about__us {
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 36px;
     color: #1E0606;
+    margin-top: 8px;
 }
 
+.ab__position {
+    margin-top: 10px;
+    width: 483px;
+}
 
+.contact__position {
+    margin-top: 20px;
+    width: 483px;
+}
 
+.link__buy {
+    width: 124px;
+    height: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 9px 22px;
+}
+
+.link__sizing {
+    margin-top: 20px;
+}
+
+iframe {
+    margin-top: 30px;
+}
