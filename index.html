@@ -80,7 +80,7 @@
                     <a href="#"><img class="search" src="./img/icon/search.svg" alt="Search" width="17" height="18"></a>
                 </li>
                 <li>
-                    <a href="/pages/contact.html" class="header__list-link">CONTACT US</a>
+                    <a href="/pages/contact.html" class="header__list-contact">CONTACT US</a>
                 </li>
             </ul> 
     </header>
@@ -187,59 +187,64 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.6849235898358!2d49.28748761565532!3d53.50982357015485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4168797f9a8510e9%3A0x5af0ee3dab85a41c!2sProspekt%20Stepana%20Razina%2C%2044%2C%20Tolyatti%2C%20Samarskaya%20oblast&#39;%2C%20445027!5e0!3m2!1sen!2sru!4v1668965937280!5m2!1sen!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </section>
-    <footer class="container">
-        <nav>
+    <footer class="footer__style">
+    <div class="container footer__block">
+        <nav class="menu__list">
             <ul>
-                <li>Navigation</li>
-                <li><a href="/about-us.html">About Us</a></li>
-                <li><a href="/pages/blog.html">Blog</a></li>
-                <li><a href="#">Design Services</a></li>
-                <li><a href="#">Featured On</a></li>
-                <li><a href="#">2018 Holiday Catalog</a></li>
-                <li><a href="#">Shop By Designer</a></li>
+                <li><p class="menu__header">Navigation</p></li>
+                <li><a href="/about-us.html" class="nav_link">About Us</a></li>
+                <li><a href="/pages/blog.html" class="nav_link">Blog</a></li>
+                <li><a href="#" class="nav_link">Design Services</a></li>
+                <li><a href="#" class="nav_link">Featured On</a></li>
+                <li><a href="#" class="nav_link">2018 Holiday Catalog</a></li>
+                <li><a href="#" class="nav_link">Shop By Designer</a></li>
             </ul>
             <ul>
-                <li>Customer Information</li>              
-                <li><a href="/pages/contact.html">Contact Us</a></li>
-                <li><a href="#">Sale Exclusions</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Search</a></li>
+                <li><p class="menu__header">Customer Information</p></li>              
+                <li><a href="/pages/contact.html" class="nav_link">Contact Us</a></li>
+                <li><a href="#" class="nav_link">Sale Exclusions</a></li>
+                <li><a href="#" class="nav_link">Shipping & Returns</a></li>
+                <li><a href="#" class="nav_link">Terms & Conditions</a></li>
+                <li><a href="#" class="nav_link">Privacy Policy</a></li>
+                <li><a href="#" class="nav_link">Search</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><p>Connect</p></li>            
-        </ul>   
-        <input type="text" name="text" placeholder="Email">  
-        <button type="submit">JOIN</button>   
-        <ul>
-            <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
-            <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
-            <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
-            <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
-        </ul>
-        <hr>
-        <ul>
-            <li><a href="#">Company Rating</a></li>
-            <li><img src="./img/icon/Star.svg" alt="Star 1" width="17" height="16"></li><!--попробовала подгрузить во всех форматах, не отражается на странице-->
-            <li><img src="" alt="Star 2"></li>
-            <li><img src="" alt="Star 3"></li>
-            <li><img src="" alt="Star 4"></li>
-            <li><img src="" alt="Star 5"></li>
-        <!--<fieldset class="rating">
-            <legend class="rating_caption">Company Rating</legend>
-         <div class="rating_group">
-            <input class="rating_star" type="radio" name="rating" value="1" aria-label="1" checked> 
-            <input class="rating_star" type="radio" name="rating" value="2" aria-label="2">
-            <input class="rating_star" type="radio" name="rating" value="3" aria-label="3">
-            <input class="rating_star" type="radio" name="rating" value="4" aria-label="4">
-            <input class="rating_star" type="radio" name="rating" value="5" aria-label="5">
+        <div class="connect_block">
+            <ul>
+                <li><p class="menu__header">Connect</p></li>            
+            </ul>   
+            <input type="text" name="text" placeholder="Email">  
+            <button type="submit">JOIN</button>   
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
+                <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
+                <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
+                <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+            </ul>
         </div>
-        </fieldset> запуталась в стилях, пока так разметила-->
-            <li>Copyright © 2018 Dlk • Design Life Kids</li>
-            <li>Web Design — <a href="https://directlinedev.com/">Direct Line Development</a></li>
-        </ul>
+        <div >
+            <ul class="rating__block">
+                <li><a href="#">Company Rating</a></li>
+                <li><img src="./img/icon/Star.svg" alt="Star 1" width="17" height="16"></li>
+                <li><img src="" alt="Star 2"></li>
+                <li><img src="" alt="Star 3"></li>
+                <li><img src="" alt="Star 4"></li>
+                <li><img src="" alt="Star 5"></li>
+                <!--<fieldset class="rating">
+                <legend class="rating_caption">Company Rating</legend>
+            <div class="rating_group">
+                <input class="rating_star" type="radio" name="rating" value="1" aria-label="1" checked> 
+                <input class="rating_star" type="radio" name="rating" value="2" aria-label="2">
+                <input class="rating_star" type="radio" name="rating" value="3" aria-label="3">
+                <input class="rating_star" type="radio" name="rating" value="4" aria-label="4">
+                <input class="rating_star" type="radio" name="rating" value="5" aria-label="5">
+            </div>
+            </fieldset> запуталась в стилях, пока так разметила-->
+                <li>Copyright © 2018 Dlk • Design Life Kids</li>
+                <li>Web Design — <a href="https://directlinedev.com/">Direct Line Development</a></li>
+            </ul>
+        </div>
+    </div>
     </footer>
 </body>
 </html>

@@ -4,9 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact US</title>
 </head>
 <body>
-    
+    <header class="header container">
+        <a href="/index.html"><img class="header__logo" src="../img/icon/logo.png" alt="Logo" width="100" height="52"></a> 
+        <nav class="header__nav left">
+            <ul class="header__list">
+                <li>
+                    <a href="/pages/blog.html" class="header__list-link">BLOG</a>
+                </li>
+                <li>
+                    <a href="/pages/catalog.html" class="header__list-link">CATALOG</a>
+                </li>
+                <li>
+                    <a href="/about-us.html" class="header__list-link">ABOUT US</a>
+                </li>
+            </ul> 
+        </nav>    
+            <ul class="header__list header__nav">
+                <li>
+                    <a href="#"><img class="search" src="../img/icon/search.svg" alt="Search" width="17" height="18"></a>
+                </li>
+                <li>
+                    <a href="/pages/contact.html" class="header__list-contact">CONTACT US</a>
+                </li>
+            </ul> 
+    </header>
+    <section class="container">
+        <h1 class="title">CONTACT US</h1>
+        <ul class="breadcrumbs">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+        <div class="contact__block">
+            <form method="post" action="#" class="contact__form">
+                <div class="container label__wrapper">
+                    <label class="contact__label" for="Name">Name</label>
+                    <input class="contact__input" type="text" placeholder="Ivan Ivanov">       
+                </div>
+                <div class="container input__element">
+                    <div class="label__wrapper">
+                        <label class="contact__label" for="Phone">Phone</label>
+                        <input class="contact__input-two" type="text">       
+                    </div>
+                    <div class="container label__wrapper">
+                        <label class="contact__label" for="Email">Email</label>
+                        <input class="contact__input-two" type="text">       
+                    </div>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li class="label__wrapper">
+                            <label class="contact__label" for="Message">Message</label>
+                            <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                        </li>
+                        <li class="checkbox_position">
+                            <input class="checkbox_input" type="checkbox">
+                            <label class="checkbox__label" for="">By clicking on the button, you consent to the processing of your personal data</label>
+                        </li>
+                    </ul>
+                    <button class="btn" type="submit">SUBMIT</button>    
+                </div> 
+            </form>
+            <div class="text__block">
+                <ul>
+                    <li>
+                        <p class="text__font">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                    </li>
+                    <li>
+                        <p class="text__font text__position">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                    </li>
+                    <li>
+                        <p class="text__cta">An expert is waiting to help you!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
