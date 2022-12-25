@@ -11,9 +11,9 @@
 }
 
 .banner__inner {
-    padding-top: 92px;
+    padding-top: 66px;
     padding-right: 740px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
 }
@@ -177,7 +177,7 @@
     background: rgba(112, 187, 220, 0.2);
     background-repeat: no-repeat;
     border: none;
-    background-image: url(../img/icon/left.svg);
+    background-image: url("../img/icon/left.svg");
     background-position: center;
     width: 60px;
     height: 38px;
@@ -187,7 +187,7 @@
     background: rgba(112, 187, 220, 0.2);
     background-repeat: no-repeat;
     border: none;
-    background-image: url(../img/icon/right.svg);
+    background-image: url("../img/icon/right.svg");
     background-position: center;
     width: 60px;
     height: 38px;

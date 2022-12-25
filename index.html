@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/contact.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -189,39 +191,43 @@
     </section>
     <footer class="footer__style">
     <div class="container footer__block">
-        <nav class="menu__list">
-            <ul>
-                <li><p class="menu__header">Navigation</p></li>
-                <li><a href="/about-us.html" class="nav_link">About Us</a></li>
-                <li><a href="/pages/blog.html" class="nav_link">Blog</a></li>
-                <li><a href="#" class="nav_link">Design Services</a></li>
-                <li><a href="#" class="nav_link">Featured On</a></li>
-                <li><a href="#" class="nav_link">2018 Holiday Catalog</a></li>
-                <li><a href="#" class="nav_link">Shop By Designer</a></li>
-            </ul>
-            <ul>
-                <li><p class="menu__header">Customer Information</p></li>              
-                <li><a href="/pages/contact.html" class="nav_link">Contact Us</a></li>
-                <li><a href="#" class="nav_link">Sale Exclusions</a></li>
-                <li><a href="#" class="nav_link">Shipping & Returns</a></li>
-                <li><a href="#" class="nav_link">Terms & Conditions</a></li>
-                <li><a href="#" class="nav_link">Privacy Policy</a></li>
-                <li><a href="#" class="nav_link">Search</a></li>
-            </ul>
-        </nav>
-        <div class="connect_block">
-            <ul>
-                <li><p class="menu__header">Connect</p></li>            
-            </ul>   
-            <input type="text" name="text" placeholder="Email">  
-            <button type="submit">JOIN</button>   
-            <ul>
-                <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
-                <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
-                <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
-                <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
-            </ul>
-        </div>
+            <nav class="menu__list">
+                <div>
+                    <ul>
+                        <li><p class="menu__header">Navigation</p></li>
+                        <li><a href="/about-us.html" class="nav_link">About Us</a></li>
+                        <li><a href="/pages/blog.html" class="nav_link">Blog</a></li>
+                        <li><a href="#" class="nav_link">Design Services</a></li>
+                        <li><a href="#" class="nav_link">Featured On</a></li>
+                        <li><a href="#" class="nav_link">2018 Holiday Catalog</a></li>
+                        <li><a href="#" class="nav_link">Shop By Designer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><p class="menu__header">Customer Information</p></li>              
+                        <li><a href="/pages/contact.html" class="nav_link">Contact Us</a></li>
+                        <li><a href="#" class="nav_link">Sale Exclusions</a></li>
+                        <li><a href="#" class="nav_link">Shipping & Returns</a></li>
+                        <li><a href="#" class="nav_link">Terms & Conditions</a></li>
+                        <li><a href="#" class="nav_link">Privacy Policy</a></li>
+                        <li><a href="#" class="nav_link">Search</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div>
+                <ul>
+                    <li><p class="menu__header">Connect</p></li>            
+                </ul>   
+                <input type="text" name="text" placeholder="Email">  
+                <button type="submit">JOIN</button>   
+                <ul class="connect_block">
+                    <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
+                    <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
+                    <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
+                    <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+                </ul>
+            </div>
         <div >
             <ul class="rating__block">
                 <li><a href="#">Company Rating</a></li>
@@ -248,32 +254,32 @@
     </footer>
 </body>
 </html>
-<form method="post" action="#">
-    <div class="container">
-        <label for="Name">Name</label>
-        <input type="text">       
+<form method="post" action="#" class="contact__form">
+    <div class="container label__wrapper">
+        <label class="contact__label" for="Name">Name</label>
+        <input class="contact__input" type="text" placeholder="Ivan Ivanov">       
     </div>
-    <div class="container">
-        <div>
-            <label for="Phone">Phone</label>
-            <input type="text">       
+    <div class="container input__element">
+        <div class="label__wrapper">
+            <label class="contact__label" for="Phone">Phone</label>
+            <input class="contact__input-two" type="text">       
         </div>
-        <div class="container">
-            <label for="Email">Email</label>
-            <input type="text">       
+        <div class="container label__wrapper">
+            <label class="contact__label" for="Email">Email</label>
+            <input class="contact__input-two" type="text">       
         </div>
     </div>
     <div class="container">
         <ul>
-            <li>
-                <label for="Message">Message</label>
+            <li class="label__wrapper">
+                <label class="contact__label" for="Message">Message</label>
                 <textarea name="Message" id="" cols="30" rows="10"></textarea>
             </li>
-            <li>
-                <input type="checkbox">
-                <label for="">By clicking on the button, you consent to the processing of your personal data</label>
+            <li class="checkbox_position">
+                <input class="checkbox_input" type="checkbox">
+                <label class="checkbox__label" for="">By clicking on the button, you consent to the processing of your personal data</label>
             </li>
         </ul>
-        <button type="submit">SUBMIT</button>    
+        <button class="btn" type="submit">SUBMIT</button>    
     </div> 
 </form>
