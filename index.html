@@ -91,16 +91,16 @@
             <div class="btn__column">
                 <p class="p__one">01</p>
                 <ul class="btn__block">
-                    <li>
+                    <li class="line__position">
                         <button type="button" class="btn__line"></button>
                     </li>
-                    <li>
+                    <li class="line__position">
                         <button type="button" class="btn__line"></button>
                     </li>
-                    <li>
+                    <li class="line__position">
                         <button type="button" class="btn__line"></button>
                     </li>
-                    <li>
+                    <li class="line__position">
                         <button type="button" class="btn__line"></button>
                     </li>
                 </ul>                  
@@ -185,7 +185,7 @@
     <div class="block__design">
         <h2 class="header__two header__position">Contacts</h2>
         <p class="text__font contact__position">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.6849235898358!2d49.28748761565532!3d53.50982357015485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4168797f9a8510e9%3A0x5af0ee3dab85a41c!2sProspekt%20Stepana%20Razina%2C%2044%2C%20Tolyatti%2C%20Samarskaya%20oblast&#39;%2C%20445027!5e0!3m2!1sen!2sru!4v1668965937280!5m2!1sen!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.6849235898358!2d49.28748761565532!3d53.50982357015485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4168797f9a8510e9%3A0x5af0ee3dab85a41c!2sProspekt%20Stepana%20Razina%2C%2044%2C%20Tolyatti%2C%20Samarskaya%20oblast&#39;%2C%20445027!5e0!3m2!1sen!2sru!4v1668965937280!5m2!1sen!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </section>
     <footer class="footer__style">
@@ -213,20 +213,20 @@
                         <li><a href="#" class="nav_link">Search</a></li>
                     </ul>
                 </div>
-            </nav>
-            <div>
-                <ul>
-                    <li><p class="menu__header">Connect</p></li>            
-                </ul>   
-                <input type="text" name="text" placeholder="Email">  
-                <button type="submit">JOIN</button>   
-                <ul class="connect_block">
-                    <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
-                    <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
-                    <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
-                    <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
-                </ul>
-            </div>
+                <div>
+                    <ul>
+                        <li><p class="menu__header">Connect</p></li>            
+                    </ul>   
+                    <input type="text" name="text" placeholder="Email">  
+                    <button type="submit">JOIN</button>   
+                    <ul class="connect_block">
+                        <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
+                        <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
+                        <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
+                        <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+                    </ul>
+                </div>
+            </nav> 
         <div >
             <ul class="rating__block">
                 <li><a href="#">Company Rating</a></li>
@@ -275,8 +275,8 @@
                 <textarea name="Message" id="" cols="30" rows="10"></textarea>
             </li>
             <li class="checkbox_position">
-                <input class="checkbox_input" type="checkbox">
-                <label class="checkbox__label" for="">By clicking on the button, you consent to the processing of your personal data</label>
+                <input class="checkbox_input" id="checkbox" type="checkbox">
+                <label class="checkbox__label" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
             </li>
         </ul>
         <button class="btn__submit" type="submit">SUBMIT</button>    
