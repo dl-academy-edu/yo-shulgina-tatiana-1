@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*сжимается внутренний контент под общий размер*/
+}
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal; /*жирный, наклонный или др*/
+    font-size: 14px;
+    line-height: 19px; /*межстрочный интервал*/
+    color: #1E0606;
+}
+
+a {
+    /*list-style: none; /*убирает маркер списка точку?*/
+    text-decoration: none; /*убирает подчеркивание*/
+}
+
+img {
+    display: block; /* блочные элементы, можем задать высоту и ширину*/
+    max-width: 100%;
+}
+
+.container { /*проставить во всех секциях, дивах, отодвигает от края*/
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none; /*прописать во всех списках li, убирает точку в списках*/
+}
+
+/* стилизация header */
+
+.header {
+    display: flex; /*задает блок*/
+    margin-top: 50px; /*отступ сверху*/
+    /* margin-bottom: 128px; */
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 60px; /*отступ от лого вправо до меню*/
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-right: 20px;
+}
+
+.left {
+    margin-right: auto; /*толкает второй список во флексе к правому полю*/
+}
+
+.search {
+    margin-right: 27px;
+}
+
+.header__list-contact {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.link__info {
+    padding: 9px 22px 9px 22px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    left: 140px;
+    top: 2230px;
+    background: #000000;
+}
+
+.place__link {
+    margin-top: 32px;
+}
+
+.btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 22px;
+    background: #000;
+}
+
+/* footer */
+
+.footer__style {
+    background: #434343;
+}
+
+.footer__block {
+    height: 356px;
+    max-width: 1180px;
+}
+
+.menu__list {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+}
+
+.menu__header {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+}
+
+.nav_link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+/* .connect_block {
+    display: flex;
+    flex-direction: column;
+}  */
+
+.rating__block {
+    display: flex;
+}
+
+/* form */
+
+.contact__form {
+    max-width: 680px;
+    background: #E5EAF8;
+    padding: 20px 40px 42px 40px;
+}
+
+.input__element {
+    display: flex;
+    gap: 20px;
+}
+
+.label__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact__label {
+    margin-bottom: 3px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+}
+
+.contact__input {
+    /* max-width: 600px; */
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact__input::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+    padding: 20px;
+}
+
+.contact__input-two {
+    width: 290px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.checkbox_position {
+    margin-top: 20px;
+}
+
+.checkbox_input {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+}
+
+.checkbox__label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    margin-left: 20px;
+}
+
+.checkbox__label::before {
+    content: "";
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url("../img/icon/input.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.checkbox_input:checked + .checkbox__label::before {
+    content: "";
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url("../img/icon/checked1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.btn__submit {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 9px 22px;
+    margin-top: 17px;
+    background: #000000;
+}
