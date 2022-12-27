@@ -111,7 +111,7 @@
     margin-left: -25px;
 }
 
-.checkbox_input:checked +.checkbox__label::before {
+.checkbox_input:checked + .checkbox__label::before {
     content: "";
     cursor: pointer;
     width: 19px;
