@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/script.js">
     <title>Main</title>
 </head>
 <body>
@@ -62,7 +64,7 @@
         <div class="banner__inner">
             <h1 class="title">THE OOH NOO COLLECTION</h1>
             <p class="notion">Designed in Slovenia</p>
-            <button type="button" class="btn_window">EXPLORE NOW</button>
+            <button type="button" class="btn_window btn__js">EXPLORE NOW</button>
             <img class="img_banner" src="./img/monster.png" alt="Monster" width="635" height="461">
         </div>
     </div>
@@ -222,34 +224,42 @@
         </div>
     </div>
     </footer>
+    <div class="popup">
+        <div class="popup__wr">
+            <form method="post" action="#" class="contact__form">
+                <div class="container label__wrapper">
+                    <label class="contact__label" for="Name">Name</label>
+                    <input class="contact__input" type="text" placeholder="Ivan Ivanov">       
+                </div>
+                <div class="container input__element">
+                    <div class="label__wrapper">
+                        <label class="contact__label" for="Phone">Phone</label>
+                        <input class="contact__input-two" type="text">       
+                    </div>
+                    <div class="container label__wrapper">
+                        <label class="contact__label" for="Email">Email</label>
+                        <input class="contact__input-two" type="text">       
+                    </div>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li class="label__wrapper">
+                            <label class="contact__label" for="Message">Message</label>
+                            <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                        </li>
+                        <li class="checkbox_position">
+                            <input class="checkbox_input" id="checkbox" type="checkbox">
+                            <label class="checkbox__label" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+                        </li>
+                    </ul>
+                    <button class="btn__submit" type="submit">SUBMIT</button>    
+                </div> 
+            </form>
+            <button type="button" class="close"></button>
+        </div> 
+        <div class="overlay"></div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
-<form method="post" action="#" class="contact__form">
-    <div class="container label__wrapper">
-        <label class="contact__label" for="Name">Name</label>
-        <input class="contact__input" type="text" placeholder="Ivan Ivanov">       
-    </div>
-    <div class="container input__element">
-        <div class="label__wrapper">
-            <label class="contact__label" for="Phone">Phone</label>
-            <input class="contact__input-two" type="text">       
-        </div>
-        <div class="container label__wrapper">
-            <label class="contact__label" for="Email">Email</label>
-            <input class="contact__input-two" type="text">       
-        </div>
-    </div>
-    <div class="container">
-        <ul>
-            <li class="label__wrapper">
-                <label class="contact__label" for="Message">Message</label>
-                <textarea name="Message" id="" cols="30" rows="10"></textarea>
-            </li>
-            <li class="checkbox_position">
-                <input class="checkbox_input" id="checkbox" type="checkbox">
-                <label class="checkbox__label" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
-            </li>
-        </ul>
-        <button class="btn__submit" type="submit">SUBMIT</button>    
-    </div> 
-</form>
+       

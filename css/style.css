@@ -30,7 +30,7 @@
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
     color: #1E0606;
 }
@@ -94,8 +94,8 @@
 .btn__line {
     width: 31px;
     height: 3px;
-    background: rgba(30, 6, 6, 0.6);
-    
+    /* background: rgba(30, 6, 6, 0.6); */
+    background: #D6CAC2;
 }
 
 .line__position {
@@ -226,7 +226,7 @@
     font-family: 'Crimson Text', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 26px;
     line-height: 34px;
     color: #1E0606;
     padding: 11px 180px 11px 60px;
@@ -238,7 +238,7 @@
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 34px;
     color: #1E0606;
 }
@@ -318,7 +318,7 @@
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 36px;
     color: #1E0606;
     margin-top: 8px;
@@ -357,6 +357,39 @@
 }
 
 /* FORM */
+
+.popup {
+    display: none;
+    top: 25%;
+    left: 30%;
+    position: absolute;
+}
+
+.open {
+    display: flex;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background: #7D97DACC;
+}
+ 
+.popup__wr {
+    display: flex;
+    z-index: 20;
+}
+
+.close {
+    background: none;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon/close.svg);
+    border: none;
+}
 
 .contact__form {
     max-width: 680px;

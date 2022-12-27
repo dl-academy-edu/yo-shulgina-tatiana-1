@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/blog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -32,10 +33,10 @@
                     <a href="#"><img class="search" src="../img/icon/search.svg" alt="Search" width="17" height="18"></a>
                 </li>
                 <li>
-                    <a href="/pages/contact.html" class="header__list-link">CONTACT US</a>
+                    <a href="/pages/contact.html" class="header__list-contact">CONTACT US</a>
                 </li>
             </ul> 
-    </header>        
+    </header>       
     <main>
         <section class="container">
             <h1>Blog</h1>
@@ -136,59 +137,85 @@
              <button type="button">next</button>  
         </section>
     </main>
-    <footer class="container">
-        <nav>
-            <ul>
-                <li>Navigation</li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="/pages/blog.html">Blog</a></li>
-                <li><a href="#">Design Services</a></li>
-                <li><a href="#">Featured On</a></li>
-                <li><a href="#">2018 Holiday Catalog</a></li>
-                <li><a href="#">Shop By Designer</a></li>
-            </ul>
-            <ul>
-                <li>Customer Information</li>              
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sale Exclusions</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Search</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li><p>Connect</p></li>            
-        </ul>   
-        <input type="text" name="text" placeholder="Email">  
-        <button type="submit">JOIN</button>   
-        <ul>
-            <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
-            <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
-            <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
-            <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
-        </ul>
-        <hr>
-        <ul>
-            <li><a href="#">Company Rating</a></li>
-            <li><img src="../img/icon/Star.svg" alt="Star 1" width="17" height="16"></li><!--попробовала подгрузить во всех форматах, не отражается на странице-->
-            <li><img src="" alt="Star 2"></li>
-            <li><img src="" alt="Star 3"></li>
-            <li><img src="" alt="Star 4"></li>
-            <li><img src="" alt="Star 5"></li>
-        <!--<fieldset class="rating">
-            <legend class="rating_caption">Company Rating</legend>
-         <div class="rating_group">
-            <input class="rating_star" type="radio" name="rating" value="1" aria-label="1" checked> 
-            <input class="rating_star" type="radio" name="rating" value="2" aria-label="2">
-            <input class="rating_star" type="radio" name="rating" value="3" aria-label="3">
-            <input class="rating_star" type="radio" name="rating" value="4" aria-label="4">
-            <input class="rating_star" type="radio" name="rating" value="5" aria-label="5">
+    <footer class="footer__style">
+        <div class="container footer__block">
+                <nav class="menu__list">
+                    <div class="navigation_list">
+                        <ul>
+                            <li><p class="menu__header position__nav">Navigation</p></li>
+                            <li class="menu__nav"><a href="/about-us.html" class="nav_link">About Us</a></li>
+                            <li class="menu__nav"><a href="/pages/blog.html" class="nav_link">Blog</a></li>
+                            <li class="menu__nav"><a href="#" class="nav_link">Design Services</a></li>
+                            <li class="menu__nav"><a href="#" class="nav_link">Featured On</a></li>
+                            <li class="menu__nav"><a href="#" class="nav_link">2018 Holiday Catalog</a></li>
+                            <li class="menu__nav"><a href="#" class="nav_link">Shop By Designer</a></li>
+                        </ul>
+                    </div>
+                    <div class="position__info">
+                        <ul>
+                            <li>
+                                <p class="menu__header position__customer">Customer Information</p>
+                            </li>              
+                            <li class="menu__nav">
+                                <a href="/pages/contact.html" class="nav_link">Contact Us</a>
+                            </li>
+                            <li class="menu__nav">
+                                <a href="#" class="nav_link">Sale Exclusions</a>
+                            </li>
+                            <li class="menu__nav">
+                                <a href="#" class="nav_link">Shipping & Returns</a>
+                            </li>
+                            <li class="menu__nav">
+                                <a href="#" class="nav_link">Terms & Conditions</a>
+                            </li>
+                            <li class="menu__nav">
+                                <a href="#" class="nav_link">Privacy Policy</a>
+                            </li>
+                            <li class="menu__nav">
+                                <a href="#" class="nav_link">Search</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><p class="menu__header position__connect">Connect</p></li>            
+                        </ul> 
+                        <div class="mail__block">  
+                            <input class="mail__input" type="text" name="text" placeholder="Email">  
+                            <button class="input__btn" type="submit">JOIN</button>  
+                        </div> 
+                        <ul class="connect_block">
+                            <li><a href="https://www.facebook.com/"><img src="../img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
+                            <li><a href="https://twimg.com/"><img src="../img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
+                            <li><a href="https://pinterest.com/"><img src="../img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
+                            <li><a href="http://instagram.com/"><img src="../img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+                        </ul>
+                    </div>
+                </nav> 
+            <div class="container finish">
+                <div class="form__item">
+                    <div class="form__label">Company Rating</div>
+                    <div class="simple__rating">
+                        <div class="simple-rating__items">
+                            <input id="simple-rating-5" type="radio" class="simple-rating__item" name="simple-rating" value="5">
+                            <label for="simple-rating-5" class="simple-rating__label"></label>
+                            <input id="simple-rating-4" type="radio" class="simple-rating__item" name="simple-rating" value="4">
+                            <label for="simple-rating-4" class="simple-rating__label"></label>
+                            <input id="simple-rating-3" type="radio" class="simple-rating__item" name="simple-rating" value="3">
+                            <label for="simple-rating-3" class="simple-rating__label"></label>
+                            <input id="simple-rating-2" type="radio" class="simple-rating__item" name="simple-rating" value="2">
+                            <label for="simple-rating-2" class="simple-rating__label"></label>
+                            <input id="simple-rating-1" type="radio" class="simple-rating__item" name="simple-rating" value="1">
+                            <label for="simple-rating-1" class="simple-rating__label"></label>
+                        </div>
+                    </div>
+                </div>
+                <ul class="li__list">
+                    <li class="text_copyr">Copyright © 2018 Dlk • Design Life Kids</li>
+                    <li class="text__web-d text_margin">Web Design — <a href="https://directlinedev.com/" class="text__web-d">Direct Line Development</a></li>
+                </ul>
+            </div>
         </div>
-        </fieldset> запуталась в стилях, пока так разметила-->
-            <li>Copyright © 2018 Dlk • Design Life Kids</li>
-            <li>Web Design — <a href="https://directlinedev.com/">Direct Line Development</a></li>
-        </ul>
-    </footer>    
+        </footer>   
 </body>
 </html>
