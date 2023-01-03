@@ -22,6 +22,10 @@ img {
     max-width: 100%;
 }
 
+button {
+    border: none;
+}
+
 .container { /*проставить во всех секциях, дивах, отодвигает от края*/
     max-width: 1180px;
     margin: 0 auto;
@@ -112,6 +116,22 @@ li {
     border: none;
     padding: 9px 22px;
     background: #000;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 22px;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+    /* margin-top: 15px; */
+}
+
+.img__breadcrumbs {
+    margin-top: 7px;
 }
 
 /* footer */

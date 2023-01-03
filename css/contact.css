@@ -7,21 +7,13 @@
     text-transform: uppercase;    
     color: #1E0606;
     margin-top: 60px;
-}
-
-.breadcrumbs {
-    display: flex;
-    font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #1E0606;
+    margin-bottom: 15px;
 }
 
 .contact__block {
     display: flex;
     margin-top: 50px;
+    margin-bottom: 60px;
     /* width: 680px;
     height: 542px; */
     gap: 120px;
