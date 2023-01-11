@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/toys.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <title>Toys</title>
 </head>
 <body>
@@ -35,19 +36,24 @@
             </ul> 
     </header>
     <main>
-        <section>
-            <h1>Toy for kids</h1>
-            <ul class="breadcrumb">
+        <section class="container">
+            <h1 class="title__toys">Toy for kids</h1>
+            <ul class="breadcrumbs">
                 <li><a href="/">Home</a></li>
-                <li><img src="../img/icon/right.svg" alt="Right" width="8" height="12"></li>
+                <li class="img__breadcrumbs">
+                    <img src="../img/icon/right.svg" alt="Right" width="8" height="12">
+                </li>
                 <li><a href="/pages/catalog.html">Catalog</a></li>
-                <li><img src="../img/icon/right.svg" alt="Right" width="8" height="12"></li>
+                <li class="img__breadcrumbs">
+                    <img src="../img/icon/right.svg" alt="Right" width="8" height="12">
+                </li>
                 <li><p>Toys</p></li>
             </ul>
-            <form action="">
+            <div class="filter__block">
+            <form class="filter__list" action="">
                 <label for="Cost">Cost</label>
                 <input type="range" name="Cost" id="Cost" min="0" max="500" step="1" value="100"> <!--не выводятся значения от 1 до 500, почему?-->
-                <fieldset>
+                 <fieldset>
                     <legend>Color</legend>
                     <ul>
                         <li>
@@ -55,92 +61,99 @@
                             <label for="">Black</label>
                         </li>
                         <li>
-                            <input type="checkbox"> 
+                             <input type="checkbox"> 
                             <label for="">Blue</label>
                         </li>
-                        <li>
-                            <input type="checkbox"> 
-                            <label for="">Green</label>
-                        </li>
-                        <li>
-                            <input type="checkbox"> 
-                            <label for="">White</label>
-                        </li>
+                           <li>
+                             <input type="checkbox"> 
+                             <label for="">Green</label>
+                         </li>
+                         <li>
+                             <input type="checkbox"> 
+                             <label for="">White</label>
+                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Delivery</legend>
-                    <ul>
-                        <li>
-                            <input type="radio" name="Delivery" id="Free shipping">
-                            <label for="Free shipping">Free shipping</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="Delivery" id="Fast shipping">
-                            <label for="Fast shipping">Fast shipping</label>
-                        </li>
+                     <ul>
+                         <li>
+                              <input type="radio" name="Delivery" id="Free shipping">
+                              <label for="Free shipping">Free shipping</label>
+                         </li>
+                         <li>
+                             <input type="radio" name="Delivery" id="Fast shipping">
+                             <label for="Fast shipping">Fast shipping</label>
+                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Amount</legend>
+                     <legend>Amount</legend>
                     <ul>
-                        <li>
-                            <input type="radio" name="Amount" id="0-5">
-                            <label for="0-5">0-5</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="Amount" id="10-20">
-                            <label for="10-20">10-20</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="Amount" id="20-50">
-                            <label for="20-50">20-50</label>
-                        </li>
-                    </ul>
-                </fieldset>
+                         <li>
+                             <input type="radio" name="Amount" id="0-5">
+                             <label for="0-5">0-5</label>
+                         </li>
+                         <li>
+                              <input type="radio" name="Amount" id="10-20">
+                              <label for="10-20">10-20</label>
+                         </li>
+                         <li>
+                              <input type="radio" name="Amount" id="20-50">
+                              <label for="20-50">20-50</label>
+                         </li>
+                     </ul>
+                 </fieldset>
                 <button type="button">APPLY</button>
             </form>
+            </div>
         </section>                                
-        <section>
-            <h2 class="h2__?">Catalog</h2> <!--прописать класс для скрытия заголовка, т.к. в дизайне нет-->
-            <ul>
-                <li><img src="../img/case.png" alt="Shark chair cover" width="380" height="385"></li>
-                <li><a href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
-                <li>$60.00 USD</li>
-            </ul>
-            <ul>
-                <li><img src="../img/frames.png" alt="Decorative frames made of brass" width="380" height="385"></li>
-                <li><a href="#">BRASS DECO FRAMES</a></li>
-                <li>$66.00 USD</li>
-            </ul>
-            <ul>
-                <li><img src="../img/apron.png" alt="CIBO FULL APRON" width="380" height="385"></li>
-                <li><a href="#">CIBO FULL APRON</a></li>
-                <li>$60.00 USD</li>
-            </ul>
-            <ul>
-                <li><img src="../img/gumball.png" alt="GATCHA GUMBALL MACHINE"></li>
-                <li><a href="#">GATCHA GUMBALL MACHINE</a></li>
-                <li>$56.00 USD</li>
-            </ul>
-            <ul>
-                <li><img src="../img/candle.png" alt="Scented paraffin candle" width="380" height="385"></li>
-                <li><a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
-                <li>$29.00 USD</li>
-               </ul>
-            <ul>
-                <li><img src="../img/candle2.png" alt="Magic spinning candle" width="380" height="382"></li>
-                <li><a href="#">TANGLE SPINNING TEA LIGHT</a></li>
-                <li>$56.00 USD</li>
-            </ul> 
-            <button type="button">prev</button>
-            <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-            </ul> 
-            <button type="button">next</button>          
+        <section class="container">
+            <h2 class="title__none">Catalog</h2> <!--прописать класс для скрытия заголовка, т.к. в дизайне нет-->
+            <div class="product__block">
+                <ul>
+                    <li><img src="../img/case.png" alt="Shark chair cover" width="380" height="385"></li>
+                    <li class="list__item"><a class="link__style" href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
+                    <li class="list__item"><p class="cost__style">$60.00 USD</p></li>
+                </ul>
+                <ul>
+                    <li><img src="../img/frames.png" alt="Decorative frames made of brass" width="380" height="385"></li>
+                    <li class="list__item"><a class="link__style" href="#">BRASS DECO FRAMES</a></li>
+                    <li class="list__item"><p class="cost__style">$66.00 USD</p></li>
+                </ul>
+                <ul>
+                    <li><img src="../img/apron.png" alt="CIBO FULL APRON" width="380" height="385"></li>
+                    <li class="list__item"><a class="link__style" href="#">CIBO FULL APRON</a></li>
+                    <li class="list__item"><p class="cost__style">$60.00 USD</p></li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../img/gumball.png" alt="GATCHA GUMBALL MACHINE">
+                    </li>
+                    <li class="list__item"><a class="link__style" href="#">GATCHA GUMBALL MACHINE</a></li>
+                    <li class="list__item"><p class="cost__style">$56.00 USD</p></li>
+                </ul>
+                <ul>
+                    <li><img src="../img/candle.png" alt="Scented paraffin candle" width="380" height="385"></li>
+                    <li class="list__item"><a class="link__style" href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
+                    <li class="list__item"><p class="cost__style">$29.00 USD</p></li>
+                </ul>
+                <ul>
+                    <li><img src="../img/candle2.png" alt="Magic spinning candle" width="380" height="382"></li>
+                    <li class="list__item"><a class="link__style" href="#">TANGLE SPINNING TEA LIGHT</a></li>
+                    <li class="list__item"><p class="cost__style">$56.00 USD</p></li>
+                </ul> 
+            </div>
+            <div class="list__link">
+                <button type="button" class="btn_pagination-one"></button>
+                <ul class="list__pagination">
+                    <li><a href="#" class="link__pagination">1</a></li>
+                    <li><a href="#" class="link__pagination-no">2</a></li>
+                    <li><a href="#" class="link__pagination-no">3</a></li>
+                    <li><a href="#" class="link__pagination-no">4</a></li>
+                </ul> 
+                <button type="button" class="btn_pagination-two"></button> 
+            </div>          
         </section>
     </main>
     <footer class="footer__style">
