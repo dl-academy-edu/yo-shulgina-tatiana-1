@@ -12,14 +12,217 @@
 .filter__block {
     margin-top: 50px;
     margin-left: -110px;
-    width: 1400px;
     height: 254px;
-    background: #7D97DA33;
+    background-color: #7D97DA33;
 }
 
 .filter__list {
     display: flex;
-    padding: 42px 195px 42px 110px;
+    padding: 42px;
+}
+
+.range {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 15px 6px;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+} 
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 118px;
+    height: 4px;
+    cursor: pointer;
+    background: #000000;
+}
+  input[type=range]::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #C29974;
+    border-radius: 50%;
+    background-image: url('../img/icon/range1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -9px;
+  }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #C29974;
+}
+ /* не получается стилизовать progress*/
+.title__range {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.range_item {
+    display: flex;
+    gap: 169px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.color__filter {
+    border: none;
+    margin-left: 92px;
+}
+
+.title__color {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.color__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 18px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.checkbox__label::before {
+    content: "";
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url("../img/icon/input.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.checkbox_input:checked + .checkbox__label::before {
+    content: "";
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url("../img/icon/checked.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.radio__none {
+    appearance: none;
+    /* background-color: #fff;
+    margin: 0;   */
+} 
+
+.radio__label::before {
+    content: "";
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('../img/icon/radio.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px; 
+}
+
+.radio_input:checked + .radio__label::before {
+    content: "";
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('../img/icon/radio2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}  
+
+.delivery__filter {
+    margin-left: 130px;
+    border: none;
+}
+
+.title__delivery {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.delivery__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.amount__filter {
+    margin-left: 69px;
+    border: none;
+}
+
+.title__amount {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.amount__list {
+    display: flex;
+}
+
+.btn__filter {
+    margin-left: 90px;
+    width: 95px;
+    height: 40px;
+    background: #000000;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 9px 22px;
+    margin-top: 79px;
 }
 
 .title__none {

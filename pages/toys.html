@@ -48,51 +48,57 @@
                     <img src="../img/icon/right.svg" alt="Right" width="8" height="12">
                 </li>
                 <li><p>Toys</p></li>
-            </ul>
-            <div class="filter__block">
-            <form class="filter__list" action="">
-                <label for="Cost">Cost</label>
-                <input type="range" name="Cost" id="Cost" min="0" max="500" step="1" value="100"> <!--не выводятся значения от 1 до 500, почему?-->
-                 <fieldset>
-                    <legend>Color</legend>
-                    <ul>
+            </ul>        
+        </section>                                
+        <div class="filter__block">
+            <form class="filter__list container" action="">
+                <fieldset class="range">
+                    <label class="title__range" for="Cost">Cost</label>
+                    <input type="range" name="Cost" id="Cost" min="0" max="500" step="1" value="100">
+                    <div class="range_item">
+                        <label for="0">0</label>
+                        <label for="500">500</label>
+                    </div>
+                </fieldset>
+                 <fieldset class="color__filter">
+                    <legend class="title__color">Color</legend>
+                    <ul class="color__list">
                         <li>
-                            <input type="checkbox"> 
-                            <label for="">Black</label>
+                            <input class="checkbox_input" id="checkbox1" type="checkbox"> 
+                            <label class="checkbox__label" for="checkbox1">Black</label>
                         </li>
                         <li>
-                             <input type="checkbox"> 
-                            <label for="">Blue</label>
+                             <input class="checkbox_input" id="checkbox2" type="checkbox"> 
+                            <label class="checkbox__label" for="checkbox2">Blue</label>
                         </li>
                            <li>
-                             <input type="checkbox"> 
-                             <label for="">Green</label>
+                             <input class="checkbox_input" id="checkbox3" type="checkbox"> 
+                             <label class="checkbox__label" for="checkbox3">Green</label>
                          </li>
                          <li>
-                             <input type="checkbox"> 
-                             <label for="">White</label>
-                         </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Delivery</legend>
-                     <ul>
-                         <li>
-                              <input type="radio" name="Delivery" id="Free shipping">
-                              <label for="Free shipping">Free shipping</label>
-                         </li>
-                         <li>
-                             <input type="radio" name="Delivery" id="Fast shipping">
-                             <label for="Fast shipping">Fast shipping</label>
+                             <input class="checkbox_input" id="checkbox4" type="checkbox"> 
+                             <label class="checkbox__label" for="checkbox4">White</label>
                          </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                     <legend>Amount</legend>
-                    <ul>
+                <fieldset class="delivery__filter">
+                    <legend class="title__delivery">Delivery</legend>
+                     <ul class="delivery__list">
                          <li>
-                             <input type="radio" name="Amount" id="0-5">
-                             <label for="0-5">0-5</label>
+                              <input type="radio" name="Delivery" id="Free shipping" class="radio__none radio__input">
+                              <label class="radio__label" for="Free shipping">Free shipping</label>
+                         </li>
+                         <li>
+                             <input class="radio__input radio__none" type="radio" name="Delivery" id="Fast shipping">
+                             <label class="radio__label" for="Fast shipping">Fast shipping</label>
+                         </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="amount__filter">
+                     <legend class="title__amount">Amount</legend>
+                    <ul class="amount__list">
+                         <li>
+                            <label for="0-5"></label><input type="radio" name="Amount" id="0-5">0-5</label>
                          </li>
                          <li>
                               <input type="radio" name="Amount" id="10-20">
@@ -104,10 +110,9 @@
                          </li>
                      </ul>
                  </fieldset>
-                <button type="button">APPLY</button>
+                <button type="button" class="btn__filter">APPLY</button>
             </form>
-            </div>
-        </section>                                
+        </div>
         <section class="container">
             <h2 class="title__none">Catalog</h2> <!--прописать класс для скрытия заголовка, т.к. в дизайне нет-->
             <div class="product__block">
