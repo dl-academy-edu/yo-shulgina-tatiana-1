@@ -38,7 +38,7 @@
     <main>
         <section class="container">
             <h1 class="title__toys">Toy for kids</h1>
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs br__position">
                 <li><a href="/">Home</a></li>
                 <li class="img__breadcrumbs">
                     <img src="../img/icon/right.svg" alt="Right" width="8" height="12">
@@ -65,48 +65,59 @@
                     <ul class="color__list">
                         <li>
                             <input class="checkbox_input" id="checkbox1" type="checkbox"> 
-                            <label class="checkbox__label" for="checkbox1">Black</label>
+                            <label class="checkbox__label black" for="checkbox1">Black</label>
                         </li>
                         <li>
                              <input class="checkbox_input" id="checkbox2" type="checkbox"> 
-                            <label class="checkbox__label" for="checkbox2">Blue</label>
+                            <label class="checkbox__label blue" for="checkbox2">Blue</label>
                         </li>
                            <li>
                              <input class="checkbox_input" id="checkbox3" type="checkbox"> 
-                             <label class="checkbox__label" for="checkbox3">Green</label>
+                             <label class="checkbox__label green" for="checkbox3">Green</label>
                          </li>
                          <li>
                              <input class="checkbox_input" id="checkbox4" type="checkbox"> 
-                             <label class="checkbox__label" for="checkbox4">White</label>
+                             <label class="checkbox__label white" for="checkbox4">White</label>
                          </li>
                     </ul>
                 </fieldset>
                 <fieldset class="delivery__filter">
                     <legend class="title__delivery">Delivery</legend>
-                     <ul class="delivery__list">
-                         <li>
-                              <input type="radio" name="Delivery" id="Free shipping" class="radio__none radio__input">
-                              <label class="radio__label" for="Free shipping">Free shipping</label>
-                         </li>
-                         <li>
-                             <input class="radio__input radio__none" type="radio" name="Delivery" id="Fast shipping">
-                             <label class="radio__label" for="Fast shipping">Fast shipping</label>
-                         </li>
-                    </ul>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="category" value="free" class="real-radio" checked>
+                            <span class="custom-radio"></span>
+                            Free shipping
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="category" value="fast" class="real-radio">
+                            <span class="custom-radio"></span>
+                            Fast shipping
+                        </label>
+                    </div>
                 </fieldset>
                 <fieldset class="amount__filter">
                      <legend class="title__amount">Amount</legend>
                     <ul class="amount__list">
                          <li>
-                            <label for="0-5"></label><input type="radio" name="Amount" id="0-5">0-5</label>
+                            <label>
+                                <input type="radio" name="Amount" value="0-5" class="real-radio-two">
+                                <span class="custom-radio-two"></span>
+                            </label>
                          </li>
                          <li>
-                              <input type="radio" name="Amount" id="10-20">
-                              <label for="10-20">10-20</label>
+                            <label>
+                                <input type="radio" name="Amount" value="10-20" class="real-radio-two">
+                                <span class="custom-radio-two"></span>
+                            </label>
                          </li>
                          <li>
-                              <input type="radio" name="Amount" id="20-50">
-                              <label for="20-50">20-50</label>
+                            <label>
+                                <input type="radio" name="Amount" value="20-50" class="real-radio-two">
+                                <span class="custom-radio-two"></span>
+                            </label>
                          </li>
                      </ul>
                  </fieldset>
@@ -117,35 +128,35 @@
             <h2 class="title__none">Catalog</h2> <!--прописать класс для скрытия заголовка, т.к. в дизайне нет-->
             <div class="product__block">
                 <ul>
-                    <li><img src="../img/case.png" alt="Shark chair cover" width="380" height="385"></li>
-                    <li class="list__item"><a class="link__style" href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
+                    <li><img class="hover__toys" src="../img/case.png" alt="Shark chair cover" width="380" height="385"></li>
+                    <li class="list__item list__position"><a class="link__style" href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
                     <li class="list__item"><p class="cost__style">$60.00 USD</p></li>
                 </ul>
                 <ul>
                     <li><img src="../img/frames.png" alt="Decorative frames made of brass" width="380" height="385"></li>
-                    <li class="list__item"><a class="link__style" href="#">BRASS DECO FRAMES</a></li>
+                    <li class="list__item list__position"><a class="link__style" href="#">BRASS DECO FRAMES</a></li>
                     <li class="list__item"><p class="cost__style">$66.00 USD</p></li>
                 </ul>
                 <ul>
                     <li><img src="../img/apron.png" alt="CIBO FULL APRON" width="380" height="385"></li>
-                    <li class="list__item"><a class="link__style" href="#">CIBO FULL APRON</a></li>
+                    <li class="list__item list__position"><a class="link__style" href="#">CIBO FULL APRON</a></li>
                     <li class="list__item"><p class="cost__style">$60.00 USD</p></li>
                 </ul>
-                <ul>
+                <ul class="list__position-two">
                     <li>
                         <img src="../img/gumball.png" alt="GATCHA GUMBALL MACHINE">
                     </li>
-                    <li class="list__item"><a class="link__style" href="#">GATCHA GUMBALL MACHINE</a></li>
+                    <li class="list__item toys__position"><a class="link__style" href="#">GATCHA GATCHA GUMBALL MACHINE</a></li>
                     <li class="list__item"><p class="cost__style">$56.00 USD</p></li>
                 </ul>
-                <ul>
+                <ul class="list__position-two">
                     <li><img src="../img/candle.png" alt="Scented paraffin candle" width="380" height="385"></li>
-                    <li class="list__item"><a class="link__style" href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
+                    <li class="list__item toys__position"><a class="link__style" href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
                     <li class="list__item"><p class="cost__style">$29.00 USD</p></li>
                 </ul>
-                <ul>
+                <ul class="list__position-two">
                     <li><img src="../img/candle2.png" alt="Magic spinning candle" width="380" height="382"></li>
-                    <li class="list__item"><a class="link__style" href="#">TANGLE SPINNING TEA LIGHT</a></li>
+                    <li class="list__item toys__position"><a class="link__style" href="#">TANGLE SPINNING TEA LIGHT</a></li>
                     <li class="list__item"><p class="cost__style">$56.00 USD</p></li>
                 </ul> 
             </div>

@@ -52,6 +52,12 @@
     color: #1E0606;
 }
 
+.head__style:hover {
+    cursor: pointer;
+    opacity: 100%;
+    text-decoration: underline;
+}
+
 .text__style {
     margin-top: 15px;
     font-family: 'Open Sans';
