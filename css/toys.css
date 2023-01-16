@@ -284,16 +284,39 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     display: flex;
 }
 
+.amount__list input[type=radio] { 
+    display: none; 
+   } 
+    
+.amount__list label { 
+    display: inline-block; 
+    cursor: pointer; 
+    padding-top: 1px; 
+    line-height: 34px; 
+    width: 80px; 
+    height: 35px; 
+    background: #FFFFFF; 
+    padding-left: 19px;
+} 
+    
+.amount__list input[type=radio]:checked + label {
+    background: #F3D0DB; 
+} 
+    
+.amount__list label:hover { 
+    background: #EDDEEB; 
+}
+
+/* 
 .amount__input {
-    /* Скрываем реальную радио кнопку*/
     width: 0;
 	height: 0;
 	position: absolute;
     opacity: 0;
     z-index: -1;
-    /*
+    
     display: none; - использовать нельзя, потому что не будет работать табуляция!
-    */
+    
 }
 
 .amount-label {
@@ -318,7 +341,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .amount-input:checked + .amount-label {
     background: #F3D0DB;
-}
+} */
 
 
 
@@ -339,10 +362,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     transition: 0.2s ease-in;  
 } */
 
-.amount-label:checked + .amount-label::before {
+/* .amount-label:checked + .amount-label::before {
     display: block;
     transform: translate(-50%, -50%) scale(1);
-}
+} */
 
 .btn__filter {
     margin-left: 55px;
@@ -391,6 +414,51 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     margin-top: 29px;
 }
 
+.hover__position {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover__toys {
+    opacity: 0%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    width: 206px;
+    height: 207px;
+    padding: 74px 12px 130px 11px;
+    background: #E5EAF8;
+    position: absolute;
+    left: 98px;
+    top: 105px;
+}
+
+.hover__toys:hover {
+    opacity: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    width: 206px;
+    height: 207px;
+    padding: 74px 12px 130px 11px;
+    background: #E5EAF8;
+    position: absolute;
+    left: 98px;
+    top: 105px;
+}
+
 .link__style {
     margin-top: 30px;
     font-family: 'Open Sans';
@@ -411,4 +479,80 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     line-height: 22px;
     text-align: center;
     color: #1E0606;
+}
+
+.hover__toys {
+    opacity: 0%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    width: 206px;
+    height: 207px;
+    padding: 74px 12px 130px 11px;
+    background: #E5EAF8;
+    position: absolute;
+    left: 98px;
+    top: 105px;
+}
+
+.hover__toys:hover {
+    opacity: 700..............................................................................................................................................................................................................................................................................................................................................................................................%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    width: 206px;
+    height: 207px;
+    padding: 74px 12px 130px 11px;
+    background: #E5EAF8;
+    position: absolute;
+    left: 98px;
+    top: 105px;
+}
+
+.hover__toyssec {
+    opacity: 0%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    width: 206px;
+    height: 207px;
+    padding: 74px 12px 130px 11px;
+    background: #E5EAF8;
+    position: absolute;
+    left: 688px;
+    top: 721px;
+}
+
+.hover__toyssec:hover {
+    opacity: 70%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    width: 206px;
+    height: 207px;
+    padding: 74px 12px 130px 11px;
+    background: #E5EAF8;
+    position: absolute;
+    left: 688px;
+    top: 721px;
 }
