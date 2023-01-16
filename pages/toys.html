@@ -100,26 +100,46 @@
                 </fieldset>
                 <fieldset class="amount__filter">
                      <legend class="title__amount">Amount</legend>
-                    <ul class="amount__list">
-                         <li>
+                     <ul class="amount__list">
+                        <li class="amound-bg">
+                            <input class="amount__input" type="radio" name="level" value="0-5" id="first" checked>
+                            <label class="amount-label" for="first">
+                                0-5
+                            </label>
+                        </li>
+                        <li class="amound-bg">
+                            <input class="amount__input" type="radio" name="level" value="10-20" id="second">
+                            <label class="amount-label" for="second">
+                                10-20
+                            </label>
+                        </li>
+                        <li class="amound-bg">
+                            <input class="amount__input" type="radio" name="level" value="20-50" id="third">
+                            <label class="amount-label" for="third">
+                                20-50
+                            </label>
+                        </li>
+                     </ul>
+                    <!-- <ul class="amount__list">
+                         <li class="amount-bg">
                             <label>
                                 <input type="radio" name="Amount" value="0-5" class="real-radio-two">
                                 <span class="custom-radio-two"></span>
                             </label>
                          </li>
-                         <li>
+                         <li class="amount-bg">
                             <label>
                                 <input type="radio" name="Amount" value="10-20" class="real-radio-two">
                                 <span class="custom-radio-two"></span>
                             </label>
                          </li>
-                         <li>
+                         <li class="amount-bg">
                             <label>
                                 <input type="radio" name="Amount" value="20-50" class="real-radio-two">
                                 <span class="custom-radio-two"></span>
                             </label>
                          </li>
-                     </ul>
+                     </ul> -->
                  </fieldset>
                 <button type="button" class="btn__filter">APPLY</button>
             </form>
@@ -128,7 +148,8 @@
             <h2 class="title__none">Catalog</h2> <!--прописать класс для скрытия заголовка, т.к. в дизайне нет-->
             <div class="product__block">
                 <ul>
-                    <li><img class="hover__toys" src="../img/case.png" alt="Shark chair cover" width="380" height="385"></li>
+                    <li><a class="" href="#">LEARN MORE</a>
+                        <img class="hover__toys" src="../img/case.png" alt="Shark chair cover" width="380" height="385"></li>
                     <li class="list__item list__position"><a class="link__style" href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
                     <li class="list__item"><p class="cost__style">$60.00 USD</p></li>
                 </ul>
