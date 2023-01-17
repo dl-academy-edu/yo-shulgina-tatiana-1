@@ -15,7 +15,7 @@
 .contact__block {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 59px;
+    margin-bottom: 61px;
     /* width: 680px;
     height: 542px; */
     gap: 120px;
@@ -117,6 +117,29 @@
     margin-left: -25px;
 }
 
+input[type=text]:hover {
+    border: 1px solid #C29974;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 1px solid #C29974;
+}
+
+input[type=text]:disabled {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+}
+
+textarea:hover {
+    border: 1px solid #C29974;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #C29974;
+}
+
 .btn__submit {
     font-family: 'Open Sans';
     font-style: normal;
@@ -127,6 +150,18 @@
     padding: 9px 22px;
     margin-top: 21px;
     background: #000000;
+}
+
+.btn__submit:hover {
+    background: #C29974;
+}
+
+.btn__submit:active {
+    background: #CFAF91;
+}
+
+.btn__submit:disabled {
+    background: #C7C1C1;
 }
 
 .text__block {

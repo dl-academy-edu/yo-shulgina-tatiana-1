@@ -282,6 +282,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .amount__list {
     display: flex;
+    margin-top: 9px;
+    margin-left: 5px;
 }
 
 .amount__list input[type=radio] { 
@@ -305,6 +307,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     
 .amount__list label:hover { 
     background: #EDDEEB; 
+}
+
+.amount-label {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #1E0606;
 }
 
 /* 
@@ -368,7 +379,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 } */
 
 .btn__filter {
-    margin-left: 55px;
+    margin-left: 49px;
     width: 95px;
     height: 40px;
     background: #000000;
@@ -441,22 +452,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .hover__toys:hover {
-    opacity: 100%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 29px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #1E0606;
-    width: 206px;
-    height: 207px;
-    padding: 74px 12px 130px 11px;
-    background: #E5EAF8;
-    position: absolute;
-    left: 98px;
-    top: 105px;
+    opacity: 90%;
+}
+
+.hover__toys:active {
+    opacity: 67%;
 }
 
 .link__style {
@@ -481,78 +481,5 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     color: #1E0606;
 }
 
-.hover__toys {
-    opacity: 0%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 29px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #1E0606;
-    width: 206px;
-    height: 207px;
-    padding: 74px 12px 130px 11px;
-    background: #E5EAF8;
-    position: absolute;
-    left: 98px;
-    top: 105px;
-}
 
-.hover__toys:hover {
-    opacity: 700..............................................................................................................................................................................................................................................................................................................................................................................................%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 29px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #1E0606;
-    width: 206px;
-    height: 207px;
-    padding: 74px 12px 130px 11px;
-    background: #E5EAF8;
-    position: absolute;
-    left: 98px;
-    top: 105px;
-}
 
-.hover__toyssec {
-    opacity: 0%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 29px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #1E0606;
-    width: 206px;
-    height: 207px;
-    padding: 74px 12px 130px 11px;
-    background: #E5EAF8;
-    position: absolute;
-    left: 688px;
-    top: 721px;
-}
-
-.hover__toyssec:hover {
-    opacity: 70%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 29px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #1E0606;
-    width: 206px;
-    height: 207px;
-    padding: 74px 12px 130px 11px;
-    background: #E5EAF8;
-    position: absolute;
-    left: 688px;
-    top: 721px;
-}

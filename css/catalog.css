@@ -79,6 +79,12 @@
     width: 192px;
 }
 
+.link__text:hover {
+    opacity: 100%;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
 .description {
     margin-top: 55px;
     margin-left: 200px;
@@ -92,7 +98,7 @@
 }
 
 .text__style {
-    margin-top: 25px;
+    margin-top: 23px;
     margin-left: 200px;
     max-width: 680px;
     font-family: 'Open Sans';
@@ -118,7 +124,7 @@
 .text__style-two {
     margin-top: 15px;
     margin-left: 200px;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
     max-width: 680px;
     font-family: 'Open Sans';
     font-style: normal;

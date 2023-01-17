@@ -51,6 +51,18 @@
     margin-bottom: 91px;
 }
 
+.btn_window:hover {
+    background: #C29974;
+}
+
+.btn_window:active {
+    background: #CFAF91;
+}
+
+.btn_window:disabled {
+    background: #C7C1C1;
+}
+
 .img_banner {
     position: absolute;
     left: 445px;
@@ -253,6 +265,18 @@
 }
 
 .menu__one {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+    padding: 11px 180px 11px 60px;
+    /* background: rgba(112, 187, 220, 0.2); */
+    margin-left: -60px;
+}
+
+.menu__one:hover {
     font-family: 'Crimson Text', sans-serif;
     font-style: italic;
     font-weight: 700;
@@ -262,6 +286,7 @@
     padding: 11px 180px 11px 60px;
     background: rgba(112, 187, 220, 0.2);
     margin-left: -60px;
+    opacity: 100%;
 }
 
 .menu__two {
@@ -271,6 +296,19 @@
     font-size: 26px;
     line-height: 34px;
     color: #1E0606;
+}
+
+.menu__two:hover {
+    font-family: 'Crimson Text', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+    margin-left: -60px;
+    padding: 11px 180px 11px 60px;
+    background: rgba(112, 187, 220, 0.2);
+    opacity: 100%;
 }
 
 .place__link {
@@ -412,6 +450,7 @@
 .popup__wr {
     display: flex;
     z-index: 20;
+    gap: 10px;
 }
 
 .close {
@@ -422,10 +461,51 @@
     border: none;
 }
 
+.close:hover {
+    background: none;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/icon/close.svg');
+    border: none;
+    opacity: 70%;
+}
+
+.close:active {
+    background: none;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/icon/close.svg');
+    border: none;
+    opacity: 40%;
+}
+
 .contact__form {
     max-width: 680px;
     background: #E5EAF8;
     padding: 20px 40px 42px 40px;
+}
+
+input[type=text]:hover {
+    border: 1px solid #C29974;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 1px solid #C29974;
+}
+
+input[type=text]:disabled {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+}
+
+textarea:hover {
+    border: 1px solid #C29974;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #C29974;
 }
 
 .input__element {
