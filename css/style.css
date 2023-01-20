@@ -1,7 +1,7 @@
 .banner {
     margin-top: 128px;
     margin-bottom: 90px;
-    background-image: url(../img/monster.png); 
+    background-image: url('../img/monster.png'); 
     position: relative;
     background: #EEE4DB;
 }
