@@ -1,6 +1,7 @@
 .banner {
     margin-top: 128px;
     margin-bottom: 90px;
+    background-image: url(../img/monster.png); 
     position: relative;
     background: #EEE4DB;
 }
@@ -16,6 +17,14 @@
 
 .title {
     margin-top: 93px;
+}
+
+.banner__inner {
+    padding-left: 132px;
+}
+
+.title {
+    padding-bottom: 20px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -27,6 +36,10 @@
 
 .notion {
     margin-top: -11px;
+}
+
+.notion {
+    padding-bottom: 20px;
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
@@ -88,7 +101,14 @@
     padding: 17px 44px 226px 28px;
 }
 
+.category__list {
+    display: flex;
+    
+}
+
 .p__one {
+    padding-top: 16px;
+    padding-left: 28px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 200;
@@ -108,6 +128,11 @@
     height: 3px;
     /* background: rgba(30, 6, 6, 0.6); */
     background: #725F5B;
+}
+
+.btn__block{
+    padding-top: 10px;
+    padding-left: 32px;
 }
 
 .btn__line {

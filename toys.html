@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="./img/icon/logo.png" alt="Logo" width="100" height="52"></a> 
+        <nav>
+            <ul>
+                <li>
+                    <a href="/blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="/catalog.html">CATALOG</a>
+                </li>
+                <li>
+                    <a href="/about-us.html">ABOUT US</a>
+                </li>
+            </ul> 
+            <ul>
+                <li>
+                    <a href="#"><img src="./img/icon/search.svg" alt="Search" width="17" height="18"></a>
+                </li>
+                <li>
+                    <a href="/contact.html">CONTACT US</a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Toy for kids</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><img src="./img/icon/right.svg" alt="Right" width="8" height="12"></li>
+                <li><a href="/catalog.html">Catalog</a></li>
+                <li><img src="./img/icon/right.svg" alt="Right" width="8" height="12"></li>
+                <li><p>Toys</p></li>
+            </ul>
+            <form action="">
+                <label for="Cost">Cost</label>
+                <input type="range" name="Cost" id="Cost" min="0" max="500" step="1" value="100"> <!--не выводятся значения от 1 до 500, почему?-->
+                <fieldset>
+                    <legend>Color</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox"> 
+                            <label for="">Black</label>
+                        </li>
+                        <li>
+                            <input type="checkbox"> 
+                            <label for="">Blue</label>
+                        </li>
+                        <li>
+                            <input type="checkbox"> 
+                            <label for="">Green</label>
+                        </li>
+                        <li>
+                            <input type="checkbox"> 
+                            <label for="">White</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="Delivery" id="Free shipping">
+                            <label for="Free shipping">Free shipping</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Delivery" id="Fast shipping">
+                            <label for="Fast shipping">Fast shipping</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Amount</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="Amount" id="0-5">
+                            <label for="0-5">0-5</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Amount" id="10-20">
+                            <label for="10-20">10-20</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Amount" id="20-50">
+                            <label for="20-50">20-50</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="button">APPLY</button>
+            </form>
+        </section>                                
+        <section>
+            <h2 class="h2__?">Catalog</h2> <!--прописать класс для скрытия заголовка, т.к. в дизайне нет-->
+            <ul>
+                <li><img src="./img/case.png" alt="Shark chair cover" width="380" height="385"></li>
+                <li><a href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
+                <li>$60.00 USD</li>
+            </ul>
+            <ul>
+                <li><img src="./img/frames.png" alt="Decorative frames made of brass" width="380" height="385"></li>
+                <li><a href="#">BRASS DECO FRAMES</a></li>
+                <li>$66.00 USD</li>
+            </ul>
+            <ul>
+                <li><img src="./img/apron.png" alt="CIBO FULL APRON" width="380" height="385"></li>
+                <li><a href="#">CIBO FULL APRON</a></li>
+                <li>$60.00 USD</li>
+            </ul>
+            <ul>
+                <li><img src="./img/gumball.png" alt="GATCHA GUMBALL MACHINE"></li>
+                <li><a href="#">GATCHA GUMBALL MACHINE</a></li>
+                <li>$56.00 USD</li>
+            </ul>
+            <ul>
+                <li><img src="./img/candle.png" alt="Scented paraffin candle" width="380" height="385"></li>
+                <li><a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
+                <li>$29.00 USD</li>
+               </ul>
+            <ul>
+                <li><img src="./img/candle2.png" alt="Magic spinning candle" width="380" height="382"></li>
+                <li><a href="#">TANGLE SPINNING TEA LIGHT</a></li>
+                <li>$56.00 USD</li>
+            </ul> 
+            <button type="button">prev</button>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul> 
+            <button type="button">next</button>          
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>Navigation</li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="#">Design Services</a></li>
+                <li><a href="#">Featured On</a></li>
+                <li><a href="#">2018 Holiday Catalog</a></li>
+                <li><a href="#">Shop By Designer</a></li>
+            </ul>
+            <ul>
+                <li>Customer Information</li>              
+                <li><a href="/contact.html">Contact Us</a></li>
+                <li><a href="#">Sale Exclusions</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li><p>Connect</p></li>            
+        </ul>   
+        <input type="text" name="text" placeholder="Email">  
+        <button type="submit">JOIN</button>   
+        <ul>
+            <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
+            <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
+            <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
+            <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+        </ul>
+        <hr>
+        <ul>
+            <li><a href="#">Company Rating</a></li>
+            <li><img src="./img/icon/Star.svg" alt="Star 1" width="17" height="16"></li><!--попробовала подгрузить во всех форматах, не отражается на странице-->
+            <li><img src="" alt="Star 2"></li>
+            <li><img src="" alt="Star 3"></li>
+            <li><img src="" alt="Star 4"></li>
+            <li><img src="" alt="Star 5"></li>
+        <!--<fieldset class="rating">
+            <legend class="rating_caption">Company Rating</legend>
+         <div class="rating_group">
+            <input class="rating_star" type="radio" name="rating" value="1" aria-label="1" checked> 
+            <input class="rating_star" type="radio" name="rating" value="2" aria-label="2">
+            <input class="rating_star" type="radio" name="rating" value="3" aria-label="3">
+            <input class="rating_star" type="radio" name="rating" value="4" aria-label="4">
+            <input class="rating_star" type="radio" name="rating" value="5" aria-label="5">
+        </div>
+        </fieldset> запуталась в стилях, пока так разметила-->
+            <li>Copyright © 2018 Dlk • Design Life Kids</li>
+            <li>Web Design — <a href="https://directlinedev.com/">Direct Line Development</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

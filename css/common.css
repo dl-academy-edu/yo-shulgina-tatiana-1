@@ -14,6 +14,7 @@ body {
 
 a {
     /*list-style: none; /*убирает маркер списка точку?*/
+    list-style: none; /*убирает маркер списка точку?*/
     text-decoration: none; /*убирает подчеркивание*/
 }
 
@@ -93,6 +94,7 @@ a:active {
     align-items: center;
     text-transform: uppercase;
     color: #1E0606;
+    margin-right: 24px;
 }
 
 .link__info {
@@ -104,6 +106,7 @@ a:active {
     line-height: 22px;
     color: #fff;
     width: 150px;
+    width: 123px;
     height: 40px;
     left: 140px;
     top: 2230px;
@@ -600,4 +603,8 @@ a:active {
 }
 
 /* end form */
-
+   /* width: 161px;
+    height: 40px;
+    left: 243px;
+    top: 474px;
+}*/
