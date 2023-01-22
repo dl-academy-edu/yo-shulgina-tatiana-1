@@ -41,13 +41,14 @@ input[type=range]:focus {
     outline: none;
 } 
 
-  input[type=range]::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track {
     width: 118px;
     height: 4px;
     cursor: pointer;
     background: #000000;
 }
-  input[type=range]::-webkit-slider-thumb {
+
+input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     -webkit-appearance: none;
     width: 24px;
@@ -63,6 +64,7 @@ input[type=range]:focus {
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: #C29974;
 }
+
  /* не получается стилизовать progress*/
 .title__range {
     font-family: 'Open Sans';
@@ -159,7 +161,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     width: 19px;
     height: 19px;
     position: absolute;
-    background-image: url("../img/icon/input.svg");
+    background-image: url('../img/icon/input.svg');
     background-position: center;
     background-repeat: no-repeat;
     margin-left: -25px;
@@ -171,7 +173,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     width: 19px;
     height: 19px;
     position: absolute;
-    background-image: url("../img/icon/checked.svg");
+    background-image: url('../img/icon/checked.svg');
     background-position: center;
     background-repeat: no-repeat;
     margin-left: -25px;
@@ -318,66 +320,6 @@ line-height: 22px;
 color: #1E0606;
 }
 
-/* 
-.amount__input {
-    width: 0;
-	height: 0;
-	position: absolute;
-    opacity: 0;
-    z-index: -1;
-    
-    display: none; - использовать нельзя, потому что не будет работать табуляция!
-    
-}
-
-.amount-label {
-    cursor: pointer;
-	position: relative;
-	display: inline-block;
-	width: 80px;
-	height: 35px;
-	background: #ffffff;
-    padding: 7px 19px 6px 19px;
-}
-
-.amount-label:hover {
-    cursor: pointer;
-    background: #F3D0DB;
-}
-
-.amount-label:active {
-    cursor: pointer;
-    background: #EDDEEB;
-}
-
-.amount-input:checked + .amount-label {
-    background: #F3D0DB;
-} */
-
-
-
-/* .amount-input::checked + .amount-label {
-    background: #F3D0DB;
-} */
-
-/* .amount-label::before {
-	content: '';
-    position: absolute;
-	display: inline-block;
-	width: 80px;
-	height: 35px;
-    background: #F3D0DB;
-	left: 50%;
-	top: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 0.2s ease-in;  
-} */
-
-/* .amount-label:checked + .amount-label::before {
-    display: block;
-    transform: translate(-50%, -50%) scale(1);
-} */
-
 .btn__filter {
     margin-left: 49px;
     width: 95px;
@@ -480,6 +422,3 @@ color: #1E0606;
     text-align: center;
     color: #1E0606;
 }
-
-
-

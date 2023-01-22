@@ -94,7 +94,7 @@ a:active {
     align-items: center;
     text-transform: uppercase;
     color: #1E0606;
-    margin-right: 24px;
+    margin-right: 1px;
 }
 
 .link__info {
@@ -106,7 +106,6 @@ a:active {
     line-height: 22px;
     color: #fff;
     width: 150px;
-    width: 123px;
     height: 40px;
     left: 140px;
     top: 2230px;
@@ -154,7 +153,7 @@ a:active {
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
     text-transform: capitalize;
     color: #1E0606;
@@ -171,7 +170,7 @@ a:active {
     display: flex;
     gap: 457px;
     margin-top: 48px;
-    margin-bottom: 59px;
+    margin-bottom: 56px;
 }
 
 .list__pagination {
@@ -265,7 +264,7 @@ a:active {
 .footer__block {
     height: 555px;
     max-width: 1400px;
-    padding-top: 97px;
+    padding-top: 100px;
 }
 
 .menu__list {

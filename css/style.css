@@ -19,10 +19,6 @@
     margin-top: 93px;
 }
 
-.banner__inner {
-    padding-left: 132px;
-}
-
 .title {
     padding-bottom: 20px;
     font-family: 'Montserrat';
@@ -35,10 +31,6 @@
 }
 
 .notion {
-    margin-top: -11px;
-}
-
-.notion {
     padding-bottom: 20px;
     font-family: 'Crimson Text';
     font-style: italic;
@@ -46,6 +38,7 @@
     font-size: 20px;
     line-height: 26px;
     color: #1E0606;
+    margin-top: -31px;
 }
 
 .btn_window {
@@ -60,7 +53,7 @@
     background: #000;
     max-width: 162px;
     height: 40px;
-    margin-top: 20px;
+    margin-left: -3px;
     margin-bottom: 91px;
 }
 
@@ -79,7 +72,7 @@
 .img_banner {
     position: absolute;
     left: 445px;
-    top: -87px;
+    top: -88px;
 }
 
 .utp {
@@ -93,6 +86,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-top: -7px;
 }
 
 .btn__column{
@@ -107,8 +101,8 @@
 }
 
 .p__one {
-    padding-top: 16px;
-    padding-left: 28px;
+    padding-top: 1px;
+    padding-left: 2px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 200;
@@ -131,8 +125,8 @@
 }
 
 .btn__block{
-    padding-top: 10px;
-    padding-left: 32px;
+    padding-top: 4px;
+    padding-left: 1px;
 }
 
 .btn__line {
@@ -237,28 +231,28 @@
 }
 
 .btn__selector {
+    width: 55px;
+    height: 40px;
     background: rgba(112, 187, 220, 0.2);
-    background-repeat: no-repeat;
-    border: none;
-    background-image: url("../img/icon/left.svg");
+    background-image: url('../img/icon/selectone.svg');
     background-position: center;
-    width: 60px;
-    height: 38px;
+    background-repeat: no-repeat;
+    padding: 5px 6px 12px 12px;
 }
 
 .btn__selectortwo {
+    width: 55px;
+    height: 40px;
     background: rgba(112, 187, 220, 0.2);
-    background-repeat: no-repeat;
-    border: none;
-    background-image: url("../img/icon/right.svg");
+    background-image: url('../img/icon/selecttwo.svg');
     background-position: center;
-    width: 60px;
-    height: 38px;
+    background-repeat: no-repeat;
+    padding: 5px 6px 12px 12px;
 }
 
 
 .selector_text {
-    padding-left: 20px;
+    padding-left: 11px;
     padding-right: 500px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -271,7 +265,7 @@
 .delivery {
     display: flex;
     position: relative;
-    top: 90px;
+    top: 92px;
 }
 
 .delivery__list {
@@ -290,6 +284,8 @@
 }
 
 .menu__one {
+    width: 480px;
+    height: 66px;
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
@@ -337,7 +333,7 @@
 }
 
 .place__link {
-    margin-top: 30px;
+    margin-top: 31px;
 }
 
 .text__font {
@@ -351,7 +347,7 @@
 }
 
 .text_one {
-    margin-top: 50px;
+    margin-top: 48px;
     width: 470px;    
 }
 
@@ -364,6 +360,21 @@
     color: #1E0606;
     margin-top: 17px;
     width: 500px;
+}
+
+.link__delivery {
+    padding: 9px 22px 9px 22px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    left: 140px;
+    top: 2230px;
+    background: #000000;
 }
 
 .partner_logo {
@@ -384,7 +395,7 @@
     flex-direction: column;
     position: relative;
     padding-left: 31px;
-    top: 22px;
+    top: 24px;
     width: 544px;
     height: 228px;
     background: #E1F0F7;
@@ -396,7 +407,7 @@
     flex-direction: column;
     position: relative;
     padding-left: 31px;
-    top: 22px;
+    top: 24px;
     width: 544px;
     height: 210px;
     background: #E1F0F7;

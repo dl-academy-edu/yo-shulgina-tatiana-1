@@ -15,9 +15,7 @@
 .contact__block {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 61px;
-    /* width: 680px;
-    height: 542px; */
+    margin-bottom: 60px;
     gap: 120px;
 }
 
@@ -143,12 +141,12 @@ textarea:focus {
 .btn__submit {
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 17px;
     line-height: 22px;
     color: #FFFFFF;
     padding: 9px 22px;
-    margin-top: 21px;
+    margin-top: 19px;
     background: #000000;
 }
 
